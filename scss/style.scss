@@ -1,0 +1,28 @@
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'socials';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  @include font($body-ff, 1.4rem, $body-color, $lh: 1.7);
+  padding: 50px 0;
+  background-color: $body-bg;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 15px;
+}
+
+.slider {
+  width: 600px;
+  height: 300px;
+}

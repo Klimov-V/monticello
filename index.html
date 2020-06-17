@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monticello</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 hidden>Monticello</h1>
+        <div class="logo"></div>
+        <nav>
+            <ul class="navigation">
+                <li class="navigation__item"></li>
+                <li class="navigation__item"></li>
+                <li class="navigation__item"></li>
+                <li class="navigation__item"></li>
+            </ul>
+        </nav>
+        <div class="socials"></div>
+    </header>
+
+
+    <section class="section section--about">
+        <!-- Slider main container -->
+        <div class="slider slider--about">
+            <!-- Additional required wrapper -->
+            <div class="slide__wrapper">
+                <!-- Slides -->
+                <div class="slide">
+                    <h2 class="slide__title">Simple & mordern</h2>
+                    <span class="slide__subtitle">We make the world's beautiful every day</span>
+                    <img src="" alt="Building">
+                </div>
+
+                <div class="slide">
+                    <h2 class="slide__title">Simple & mordern</h2>
+                    <span class="slide__subtitle">We make the world's beautiful every day</span>
+                    <img src="" alt="Building">
+                </div>
+                
+                <div class="slide">
+                    <h2 class="slide__title">Simple & mordern</h2>
+                    <span class="slide__subtitle">We make the world's beautiful every day</span>
+                    <img src="" alt="Building">
+                </div>
+
+                <div class="slide">
+                    <h2 class="slide__title">Simple & mordern</h2>
+                    <span class="slide__subtitle">We make the world's beautiful every day</span>
+                    <img src="" alt="Building">
+                </div>
+
+                <div class="slide">
+                    <h2 class="slide__title">Simple & mordern</h2>
+                    <span class="slide__subtitle">We make the world's beautiful every day</span>
+                    <img src="" alt="Building">
+                </div>
+                
+            </div>
+            <!-- If we need pagination -->
+            <div class="slider__pagination"></div>
+        </div>
+    </section>
+
+
+    <section class="section section__projects">
+
+    </section>
+
+
+    <section class="section section__"></section>
+    <section class="section section__"></section>
+    <section class="section section__"></section>
+
+
+    <footer></footer>
+
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        var swiper = new Swiper('.slider', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          direction: 'vertical',
+          loop: true,
+          pagination: {
+            el: '.slider__pagination',
+            clickable: true,
+            bulletClass: 'slider__dot',
+            bulletActiveClass: 'slider__dot--active'
+          }
+        });
+      </script>
+
+</body>
+
+</html>
