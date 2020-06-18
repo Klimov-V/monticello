@@ -35,3 +35,25 @@
         }
     }
 }
+.slide {
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title,
+    &__subtitle {
+        text-transform: uppercase;
+    }
+    
+    &__title {
+        @include font ($ff: $title-ff, $lh: 1, $fz: 8rem);
+        margin: 0 0 20px;
+    }
+    &__subtitle {
+        font-size: 1.8rem;
+        letter-spacing: .5rem;
+    }
+}
