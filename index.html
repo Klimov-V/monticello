@@ -29,43 +29,49 @@
 
     <section class="section section--about">
         <!-- Slider main container -->
-        <div class="slider slider--about">
-            <!-- Additional required wrapper -->
-            <div class="slide__wrapper">
+        <div class="swiper-container">
+            <!-- Wrapper -->
+            <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="slide">
-                    <h2 class="slide__title">Simple & mordern</h2>
-                    <span class="slide__subtitle">We make the world's beautiful every day</span>
-                    <img src="" alt="Building">
+                <div class="swiper-slide" style="background-color: red;">
+                    <div class="slide">
+                        <h2 class="slide__title">Simple & mordern</h2>
+                        <span class="slide__subtitle">We make the world's beautiful every day</span>
+                        <img src="" alt="Building">
+                    </div>
                 </div>
-
-                <div class="slide">
-                    <h2 class="slide__title">Simple & mordern</h2>
-                    <span class="slide__subtitle">We make the world's beautiful every day</span>
-                    <img src="" alt="Building">
+                <div class="swiper-slide" style="background-color: green;">
+                    <div class="slide">
+                        <h2 class="slide__title">Simple & mordern</h2>
+                        <span class="slide__subtitle">We make the world's beautiful every day</span>
+                        <img src="" alt="Building">
+                    </div>
                 </div>
-                
-                <div class="slide">
-                    <h2 class="slide__title">Simple & mordern</h2>
-                    <span class="slide__subtitle">We make the world's beautiful every day</span>
-                    <img src="" alt="Building">
+                <div class="swiper-slide" style="background-color: blue;">
+                    <div class="slide">
+                        <h2 class="slide__title">Simple & mordern</h2>
+                        <span class="slide__subtitle">We make the world's beautiful every day</span>
+                        <img src="" alt="Building">
+                    </div>
                 </div>
-
-                <div class="slide">
-                    <h2 class="slide__title">Simple & mordern</h2>
-                    <span class="slide__subtitle">We make the world's beautiful every day</span>
-                    <img src="" alt="Building">
+                <div class="swiper-slide" style="background-color: green;">
+                    <div class="slide">
+                        <h2 class="slide__title">Simple & mordern</h2>
+                        <span class="slide__subtitle">We make the world's beautiful every day</span>
+                        <img src="" alt="Building">
+                    </div>
                 </div>
-
-                <div class="slide">
-                    <h2 class="slide__title">Simple & mordern</h2>
-                    <span class="slide__subtitle">We make the world's beautiful every day</span>
-                    <img src="" alt="Building">
+                <div class="swiper-slide" style="background-color: blue;">
+                    <div class="slide">
+                        <h2 class="slide__title">Simple & mordern</h2>
+                        <span class="slide__subtitle">We make the world's beautiful every day</span>
+                        <img src="" alt="Building">
+                    </div>
                 </div>
-                
+                ...
             </div>
-            <!-- If we need pagination -->
-            <div class="slider__pagination"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -87,18 +93,16 @@
     <script src="js/script.js"></script>
 
     <script>
-        var swiper = new Swiper('.slider', {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          direction: 'vertical',
-          loop: true,
-          pagination: {
-            el: '.slider__pagination',
-            clickable: true,
-            bulletClass: 'slider__dot',
-            bulletActiveClass: 'slider__dot--active'
-          }
-        });
+        var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        })
       </script>
 
 </body>
