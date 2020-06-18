@@ -1,4 +1,5 @@
 @import 'normalize';
+@import 'fonts';
 @import 'variables';
 @import 'mixins';
 @import 'socials';
@@ -11,7 +12,7 @@ html {
   font-size: 10px;
 }
 body {
-  @include font($body-ff, 1.4rem, $body-color, $lh: 1.7);
+  @include font($body-ff, 1.4rem, $primary-color, $lh: 1.7);
   background-color: $body-bg;
 }
 
@@ -27,7 +28,6 @@ body {
 }
 
 .header {
-  outline: 1px solid red;
   display: flex;
   justify-content: space-between;
   padding: 50px 0 0;
@@ -50,13 +50,13 @@ body {
   }
   &__item {
     display: inline-block;
+    @include font ($ff: $body-ff, $fz: 1.4rem, $fc: $secondary-color, $lh: 4rem);
     text-transform: uppercase;
     text-decoration: none;
-    color: white;
-    line-height: 40px;
 
-    &:hover &:before {
+    &:hover:before {
       background-color: white;
+      @include tr;
     }
     
     &:before {
@@ -67,6 +67,7 @@ body {
       width: 10px;
       height: 10px;
       margin-right: 15px;
+      @include tr;
     }
   }
 }

@@ -1,5 +1,5 @@
-$social-size: 32px;
-$social-border: 2px;
+$social-size: 40px;
+$social-border: 1px;
 
 .social {
     list-style: none;
@@ -9,23 +9,23 @@ $social-border: 2px;
 
     &__item {
         display: inline-block;
-        margin: 5px;
+        margin: 0 5px;
     }
 
     &__link {
         display: inline-block;
-        color: $light-gray;
+        fill: $secondary-color;
         text-decoration: none;
         width: $social-size;
         height: $social-size;
-        line-height: calc(#{$social-size} - 2 * #{$social-border});
-        border: 2px solid $light-gray;
+        line-height: calc(#{$social-size} + #{$social-border});
+        border: 2px solid $secondary-color;
         border-radius: 50%;
         
         @include tr;
         @include hover {
-            background-color: $light-gray;
-            color: $secondary-color;
+            background-color: $secondary-color;
+            fill: $primary-color;
         }
     }
 }
