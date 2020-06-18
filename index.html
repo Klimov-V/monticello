@@ -59,50 +59,46 @@
 
 
     <section class="section section--about">
-        <!-- Slider main container -->
         <div class="swiper-container">
-            <!-- Wrapper -->
             <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide" style="background-color: red;">
+                <div class="swiper-slide"> 
                     <div class="slide">
                         <h2 class="slide__title">Simple & mordern</h2>
                         <span class="slide__subtitle">We make the world's beautiful every day</span>
-                        <img src="" alt="Building">
-                    </div>
-                </div>
-                <div class="swiper-slide" style="background-color: green;">
+                        <img class="slide__bg" src="img/about-bg.png" alt="Building">
+                    </div> 
+                 </div>
+                <div class="swiper-slide">
                     <div class="slide">
                         <h2 class="slide__title">Simple & mordern</h2>
                         <span class="slide__subtitle">We make the world's beautiful every day</span>
-                        <img src="" alt="Building">
+                        <img class="slide__bg" src="img/about-bg.png" alt="Building">
                     </div>
                 </div>
-                <div class="swiper-slide" style="background-color: blue;">
+                <div class="swiper-slide">
                     <div class="slide">
                         <h2 class="slide__title">Simple & mordern</h2>
                         <span class="slide__subtitle">We make the world's beautiful every day</span>
-                        <img src="" alt="Building">
+                        <img class="slide__bg" src="img/about-bg.png" alt="Building">
                     </div>
                 </div>
-                <div class="swiper-slide" style="background-color: green;">
+                <div class="swiper-slide">
                     <div class="slide">
                         <h2 class="slide__title">Simple & mordern</h2>
                         <span class="slide__subtitle">We make the world's beautiful every day</span>
-                        <img src="" alt="Building">
+                        <img class="slide__bg" src="img/about-bg.png" alt="Building">
                     </div>
                 </div>
-                <div class="swiper-slide" style="background-color: blue;">
+                <div class="swiper-slide">
                     <div class="slide">
                         <h2 class="slide__title">Simple & mordern</h2>
                         <span class="slide__subtitle">We make the world's beautiful every day</span>
-                        <img src="" alt="Building">
+                        <img class="slide__bg" src="img/about-bg.png" alt="Building">
                     </div>
                 </div>
-                ...
             </div>
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
+
+             <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -156,17 +152,17 @@
 
 
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
 
     <script>
         var mySwiper = new Swiper ('.swiper-container', {
-            // Optional parameters
             direction: 'vertical',
             loop: true,
-
-            // If we need pagination
             pagination: {
-            el: '.swiper-pagination',
+                el: '.swiper-pagination',
+                clickable: true,
+                bulletClass: 'slider__dot',
+                bulletActiveClass: 'slider__dot--active'
             },
         })
       </script>
