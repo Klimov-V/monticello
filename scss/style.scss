@@ -12,17 +12,70 @@ html {
 }
 body {
   @include font($body-ff, 1.4rem, $body-color, $lh: 1.7);
-  padding: 50px 0;
   background-color: $body-bg;
 }
 
 .container {
   margin: 0 auto;
+  padding: 0;
   max-width: 1170px;
-  padding: 15px;
 }
 
 .slider {
   width: 600px;
   height: 300px;
+}
+
+.header {
+  outline: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.navigation {
+  flex-grow: 1;
+  max-width: 670px;
+
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+
+    &:hover &:before {
+      background-color: white;
+    }
+    
+    &:before {
+      content: "";
+      display: inline-block;
+      border: 1px solid white;
+      border-radius: 100%;
+      width: 10px;
+      height: 10px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.section {
+
+  &--about {
+    background-image: linear-gradient(45deg, #55b7ff, #7e5aff);
+    min-height: 100vh;
+    padding-top: 30%;
+  }
 }
