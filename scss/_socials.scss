@@ -19,7 +19,7 @@ $social-border: 1px;
         width: $social-size;
         height: $social-size;
         line-height: calc(#{$social-size} + #{$social-border});
-        border: 2px solid $primary-color;
+        border: $border-width solid $primary-color;
         border-radius: 50%;
         
         @include tr;
@@ -27,5 +27,9 @@ $social-border: 1px;
             background-color: $primary-color;
             fill: $secondary-color;
         }
+    }
+
+    @media screen and (min-width: 992px) {
+        
     }
 }

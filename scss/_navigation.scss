@@ -1,0 +1,125 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+  
+    &__menu {
+      display: none;
+
+
+      &.active {
+        @media screen and (max-width: 991px) {
+            display: block;
+            position: absolute;
+            top: 20%;
+            left: 2%;
+            right: 2%;
+            background-color: rgba(126, 90, 255, .8);
+            border-radius: 5px;
+            height: 95vh;
+
+            & .navigation {
+                margin: 0 auto;
+                
+
+                &__list {
+                    text-align: center;
+                    // width: 100%;
+                    padding-left: 0;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+                
+            }
+
+        }
+      }
+        
+    }
+  
+    @media screen and (min-width: 992px) {
+      &__menu {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+      }
+    }
+}
+
+.navigation {
+    flex-grow: 1;
+    max-width: 670px;
+    text-align: end;
+  
+    
+  
+    &__list {
+        list-style: none;
+        justify-content: space-around;
+        padding: 0;
+    }
+    &__item {
+      display: inline-block;
+      @include font ($ff: $body-ff, $fz: 1.4rem, $fc: $primary-color, $lh: 4rem);
+      text-transform: uppercase;
+      text-decoration: none;
+  
+      &:hover:before {
+        background-color: white;
+        @include tr;
+      }
+      
+      &:before {
+        content: "";
+        display: inline-block;
+        border: 1px solid white;
+        border-radius: 100%;
+        width: 10px;
+        height: 10px;
+        margin-right: 15px;
+        @include tr;
+      }
+    }
+
+    &__toggler {
+        text-decoration: none;
+        height: 40px;
+        padding: 0 10px;
+        line-height: 35px;
+        margin: auto 0;
+        background: none;
+        border: $border-width solid $primary-color;
+        border-radius: 50px;
+        color: $primary-color;
+        position: relative;
+        z-index: 10;
+
+        @include tr;
+        @include hover {
+            background-color: $primary-color;
+            color: $secondary-color;
+        }
+    }
+
+    
+}
+
+@media screen and (min-width: 992px) {
+    .navigation {
+
+        &__toggler {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+        }
+    }
+}
+

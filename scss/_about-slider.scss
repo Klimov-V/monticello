@@ -15,10 +15,10 @@
     }
 
     &__dot {
-        margin: 40px 40px 0 0;
+        width: 8px;
+        height: 8px;
+        margin: 15px 15px 0 0;
         display: block;
-        width: 16px;
-        height: 16px;
         border-radius: 50%;
         background-color: rgba($primary-color, 0);
         border: $border-width solid $primary-color;
@@ -26,12 +26,23 @@
         @include tr;
         @include hover {
             background-color: $primary-color;
-            // border-color: $primary-color;
             cursor: pointer;
         }
+        
 
         &--active {
             background-color: $primary-color;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 12px;
+            height: 12px;
+            margin: 20px 20px 0 0;
+        }
+        @media screen and (min-width: 1024px) {
+            margin: 40px 40px 0 0;
+            width: 16px;
+            height: 16px;
         }
     }
 }
@@ -49,11 +60,38 @@
     }
     
     &__title {
-        @include font ($ff: $title-ff, $lh: 1, $fz: 8rem);
-        margin: 0 0 20px;
+        @include font ($ff: $title-ff, $lh: 1, $fz: 2rem);
+        margin: 0 0 10px;
+
+        @media screen and (min-width: 576px) {
+            font-size: 3rem;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 4rem;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 8rem;
+        }
     }
     &__subtitle {
-        font-size: 1.8rem;
+        font-size: .8rem;
         letter-spacing: .5rem;
+        max-width: 280px;
+        text-align: center;
+
+        @media screen and (min-width: 576px) {
+            font-size: 1rem;
+            max-width: 100%
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 1.2rem;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 1.4rem;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 1.8rem;
+        }
+    
     }
 }

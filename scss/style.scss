@@ -2,8 +2,8 @@
 @import 'fonts';
 @import 'variables';
 @import 'mixins';
-@import 'socials';
-@import 'about-slider';
+
+
 
 * {
   box-sizing: border-box;
@@ -15,61 +15,19 @@ html {
 body {
   @include font($body-ff, 1.4rem, $primary-color, $lh: 1.7);
   background-color: $body-bg;
+  scroll-behavior: smooth;
 }
 
 .container {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
   max-width: 1170px;
 }
 
+@import 'navigation';
+@import 'socials';
+@import 'about-slider';
 
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 0 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-}
-
-
-.navigation {
-  flex-grow: 1;
-  max-width: 670px;
-
-
-  &__list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  &__item {
-    display: inline-block;
-    @include font ($ff: $body-ff, $fz: 1.4rem, $fc: $primary-color, $lh: 4rem);
-    text-transform: uppercase;
-    text-decoration: none;
-
-    &:hover:before {
-      background-color: white;
-      @include tr;
-    }
-    
-    &:before {
-      content: "";
-      display: inline-block;
-      border: 1px solid white;
-      border-radius: 100%;
-      width: 10px;
-      height: 10px;
-      margin-right: 15px;
-      @include tr;
-    }
-  }
-}
 
 .section {
   position: relative;
@@ -81,8 +39,8 @@ body {
 
   &__next {
     fill: $primary-color;
-    @include posA($top: null, $delta-y: null);
-    bottom: 50px;
+    @include posA($top: null);
+    bottom: 25px;
     z-index: 10;
 
     @include hover {
@@ -90,3 +48,4 @@ body {
     }
   }
 }
+
