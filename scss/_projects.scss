@@ -1,0 +1,118 @@
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+
+    @media screen and (min-width: 992px) {
+        flex-direction: row;
+        padding-bottom: 140px;
+    }
+
+    .btn {
+        margin: 30px auto 30px;
+
+        @media screen and (min-width: 992px) {
+            margin: 30px 0 60px;
+        }
+    }
+
+    &--reverse {
+
+        @media screen and (min-width: 992px) {
+            flex-direction: row-reverse;
+        }
+
+        .project__discription {
+            margin: 30px 0 0;
+
+            @media screen and (min-width: 768px) {
+                flex-direction: row-reverse;
+                margin: 60px 70px 0 0;
+            }
+        }
+        .project__img-wraper {
+            box-shadow: 30px -20px 0 #7e5aff;
+
+            @media screen and (min-width: 768px) {
+                box-shadow: 100px -40px 0 #7e5aff;
+            }
+            @media screen and (min-width: 992px) {
+                max-width: 630px;
+                box-shadow: 215px -70px 0 #7e5aff;
+            }
+        }
+    }
+
+    &__discription {
+        max-width: 470px;
+        margin: 30px 0 0;
+        text-align: center;
+
+        @media screen and (min-width: 992px) {
+            margin: 30px 0 0 70px;
+            text-align: left;
+        }
+    }
+    
+    &__status {
+        @include font ($fc: $secondary-color, $lh: 1);
+        text-transform: uppercase;
+        margin: 5px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 2.2rem;
+        }
+    }
+    &__name {
+        @include font ($ff: $title-ff, $fz: 3rem, $fc: $secondary-color, $lh: 1);
+        text-transform: uppercase;
+        margin: 0;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 4.4rem;
+        }
+    }
+    &__text {
+        @include font ($ff: $text-ff, $fz: 1.8rem, $fc: $secondary-color, $lh: 1.7);
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+        @media screen and (min-width: 1200px) {
+            
+        }
+    }
+    
+    &__img-wraper {
+        
+        max-width: 420px;
+        overflow: hidden;
+        box-shadow: -30px -20px 0 #55b7ff;
+        font-size: 0;
+        
+        @media screen and (min-width: 768px) {
+            box-shadow: -100px -40px 0 #55b7ff;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 630px;
+            box-shadow: -215px -70px 0 #55b7ff;
+        }
+    }
+    &__img {
+        max-width: 100%;
+    }
+
+    &__marker {
+        @include font ($ff: $text-ff, $fz: 1.8rem, $fc: $secondary-color, $lh: 3rem);
+        font-style: italic;
+
+        @media screen and (min-width: 1200px) {
+            
+        }
+    }
+
+}

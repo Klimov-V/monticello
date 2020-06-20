@@ -5,17 +5,22 @@
 
 
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 body {
   @include font($body-ff, 1.4rem, $primary-color, $lh: 1.7);
-  background-color: $body-bg;
-  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -32,20 +37,66 @@ body {
 .section {
   position: relative;
 
-  &--about {
-    background-image: linear-gradient(45deg, #55b7ff, #7e5aff);
-    min-height: 100vh;
-  }
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    @include font ($ff: $section-title-ff, $fz: 2rem, $fc: $secondary-color);
+    margin: 60px;
+    padding-top: 0.95em;
 
-  &__next {
-    fill: $primary-color;
-    @include posA($top: null);
-    bottom: 25px;
-    z-index: 10;
+    @media screen and (min-width: 768px) {
+      font-size: 3rem;
+    }
+    @media screen and (min-width: 992px) {
+      font-size: $section-title-fz;
+      margin-bottom: 100px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 175px;
+    }
 
-    @include hover {
-      fill: $secondary-color;
+    &:before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 50px;
+      background-color: $secondary-color;
+      margin: 0 auto;
+
+      @media screen and (min-width: 768px) {
+        width: 75px;
+      }
+      @media screen and (min-width: 992px) {
+        width: 100px;
+      }
     }
   }
 }
 
+.about {
+  background-image: linear-gradient(45deg, #55b7ff, #7e5aff);
+  min-height: 100vh;
+}
+
+.next-section {
+  fill: $primary-color;
+  @include posA($top: null);
+  bottom: 25px;
+  z-index: 10;
+
+  @include hover {
+    fill: $secondary-color;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  display: block;
+  max-width: 190px;
+  text-align: center;
+  color: $secondary-color;
+  line-height: 50px;
+  border: $border-width solid $secondary-color;
+}
+
+@import 'projects';

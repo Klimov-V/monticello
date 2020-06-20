@@ -29,7 +29,7 @@
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li><a href="#" class="navigation__item">About Us</a></li>
-                        <li><a href="#" class="navigation__item">Projects</a></li>
+                        <li><a href="#projects" class="navigation__item">Projects</a></li>
                         <li><a href="#" class="navigation__item">News</a></li>
                         <li><a href="#" class="navigation__item">Contact</a></li>
                     </ul>
@@ -66,7 +66,7 @@
     </header>
 
 
-    <section class="section section--about">
+    <section class="section about">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"> 
@@ -104,7 +104,7 @@
              <div class="swiper-pagination"></div>
         </div>
 
-        <a href="#projects" class="section__next">
+        <a href="#projects" class="next-section">
             <svg width="40" height="40">
                 <use xlink:href="#next-section"/>
             </svg>
@@ -114,8 +114,44 @@
     
 
 
-    <section class="section section__projects" id="projects">
-
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section__title projects__title">what we do</h2>
+            <article class="project">
+                <div class="project__img-wraper">
+                    <img class="project__img" src="https://picsum.photos/id/1/800/600" alt="Trade Center">
+                </div>
+                <div class="project__discription">
+                    <h3 class="project__status">One World</h3>
+                    <h4 class="project__name">Trade Center</h4>
+                    <p class="project__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                    <a href="#" class="btn">more details</a>
+                    <a href="#" class="project__marker">
+                        <svg width="18" height="18">
+                            <use xlink:href="#pin"/>
+                        </svg>
+                        New York City, United States - 1776 feet
+                    </a>
+                </div>
+            </article>
+            <article class="project project--reverse">
+                <div class="project__img-wraper">
+                    <img class="project__img" src="img/img2.jpg" alt="Trade Center">
+                </div>
+                <div class="project__discription">
+                    <h3 class="project__status">International</h3>
+                    <h4 class="project__name">Commerce Centre</h4>
+                    <p class="project__text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                    <a href="#" class="btn">more details</a>
+                    <a href="#" class="project__marker">
+                        <svg width="18" height="18">
+                            <use xlink:href="#pin"/>
+                        </svg>
+                        Hong Kong - 1588 Feet
+                    </a>
+                </div>
+            </article>
+        </div>
     </section>
 
 
@@ -159,25 +195,20 @@
         <symbol viewbox="0 0 512 512" id="next-section">
             <path d="m256 512c-68.378906 0-132.667969-26.628906-181.019531-74.980469-48.351563-48.351562-74.980469-112.640625-74.980469-181.019531s26.628906-132.667969 74.980469-181.019531c48.351562-48.351563 112.640625-74.980469 181.019531-74.980469s132.667969 26.628906 181.019531 74.980469c48.351563 48.351562 74.980469 112.640625 74.980469 181.019531s-26.628906 132.667969-74.980469 181.019531c-48.351562 48.351563-112.640625 74.980469-181.019531 74.980469zm0-472c-119.101562 0-216 96.898438-216 216s96.898438 216 216 216 216-96.898438 216-216-96.898438-216-216-216zm138.285156 182-28.285156-28.285156-110 110-110-110-28.285156 28.285156 138.285156 138.285156zm0 0"/>
         </symbol>
+        <symbol viewbox="0 0 512 512" id="pin">
+            <path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5
+			c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021
+			C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333
+			s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/>
+        </symbol>
     </svg>
 
 
 
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/sliders.js"></script>
     <script src="js/script.js"></script>
 
-    <script>
-        var mySwiper = new Swiper ('.swiper-container', {
-            direction: 'vertical',
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                bulletClass: 'slider__dot',
-                bulletActiveClass: 'slider__dot--active'
-            },
-        })
-      </script>
 
 </body>
 
