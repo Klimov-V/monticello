@@ -1,0 +1,67 @@
+
+
+.news {
+    background-image: linear-gradient(45deg, #55b7ff, #24ccfa);
+    min-height: 100vh;
+    
+    &__swiper {
+        height: auto;
+    }
+
+    &__title {
+        color: $primary-color;
+        margin: 0;
+        padding-top: 140px;
+
+        &:before {
+            background-color: $primary-color;
+        }
+    }
+
+    &__slide {
+        outline: 2px solid red;
+        width: 300px;
+    }
+
+
+
+
+    // .swiper-slide {
+    //     height: 515px;
+
+    // }
+
+    .slider {
+        &__dot {
+            width: 8px;
+            height: 8px;
+            margin: 15px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: rgba($primary-color, 0);
+            border: $border-width solid $primary-color;
+    
+            @include tr;
+            @include hover {
+                background-color: $primary-color;
+                cursor: pointer;
+            }
+            
+    
+            &--active {
+                background-color: $primary-color;
+            }
+    
+            @media screen and (min-width: 768px) {
+                width: 12px;
+                height: 12px;
+                margin: 20px;
+            }
+            @media screen and (min-width: 1024px) {
+                margin: 40px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}

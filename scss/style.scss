@@ -31,7 +31,7 @@ a {
 
 @import 'navigation';
 @import 'socials';
-@import 'about-slider';
+@import 'about';
 
 
 .section {
@@ -73,10 +73,6 @@ a {
   }
 }
 
-.about {
-  background-image: linear-gradient(45deg, #55b7ff, #7e5aff);
-  min-height: 100vh;
-}
 
 .next-section {
   fill: $primary-color;
@@ -100,3 +96,4 @@ a {
 }
 
 @import 'projects';
+@import 'news';
