@@ -40,32 +40,28 @@ a {
   &__title {
     text-transform: uppercase;
     text-align: center;
-    @include font ($ff: $section-title-ff, $fz: 2rem, $fc: $secondary-color);
-    margin: 60px;
-    padding-top: 0.95em;
+    @include font ($ff: $section-title-ff, $fz: 2.8rem, $fc: $secondary-color);
+    margin: 0;
+    padding: 70px 0 70px;
 
     @media screen and (min-width: 768px) {
       font-size: 3rem;
     }
     @media screen and (min-width: 992px) {
       font-size: $section-title-fz;
-      margin-bottom: 100px;
+      padding: 145px 0 100px;
     }
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 175px;
-    }
+    
 
     &:before {
       content: "";
       display: block;
       height: 1px;
-      width: 50px;
+      width: 75px;
       background-color: $secondary-color;
       margin: 0 auto;
 
-      @media screen and (min-width: 768px) {
-        width: 75px;
-      }
+      
       @media screen and (min-width: 992px) {
         width: 100px;
       }

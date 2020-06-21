@@ -11,7 +11,12 @@ var aboutSwiper = new Swiper ('.about__swiper', {
 
 var newsSwiper = new Swiper ('.news__swiper', {
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
     spaceBetween: 30,
     pagination: {
         el: '.swiper-pagination',
