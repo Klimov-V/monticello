@@ -26,7 +26,17 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1170px;
+  max-width: 540px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 720px;
+}
+@media screen and (min-width: 992px) {
+    max-width: 960px;
+}
+@media screen and (min-width: 1200px) {
+    max-width: 1170px;
+}
 }
 
 @import 'navigation';
@@ -93,3 +103,4 @@ a {
 
 @import 'projects';
 @import 'news';
+@import 'gallery';

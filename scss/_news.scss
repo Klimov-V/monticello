@@ -94,7 +94,6 @@
 
     &__date {
         color: #55b7ff;
-        
     }
 
     &__discription {
@@ -127,12 +126,14 @@
     }
 
     .swiper {
+        
         &-slide {
             max-width: 375px;
         }
         &-pagination {
             position: relative;
         }
+        
     }
 
     .slider {
@@ -150,7 +151,7 @@
                 background-color: $primary-color;
                 cursor: pointer;
             }
-            
+
             &--active {
                 background-color: $primary-color;
             }
@@ -161,5 +162,23 @@
                 height: 16px;
             }
         }
+    }
+
+    &__next,
+    &__prev {
+        display: none;
+        fill: $primary-color;
+        z-index: 10;
+
+        @media screen and (min-width: 992px) {
+            display: block;
+        }
+    }
+    &__next {
+        @include posA(30%, null, 0, 50%);
+        right: -75px;
+    }
+    &__prev {
+        @include posA(30%, -75px, 0, 50%);
     }
 }
