@@ -1,16 +1,17 @@
 .gallery {
+    max-width: 1170px;
+    margin: 0 auto;
 
     &__title {
         padding-bottom: 70px;
     }
 
     &__panel {
-
         display: grid;
+        text-align: center;
         gap: 10px;
-
-
-        @media screen and (min-width: 992px) {
+        
+        @media screen and (min-width: 1200px) {
             grid-template-columns: 2fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;    
         }
@@ -22,16 +23,24 @@
         position: relative;
         text-align: center;
         margin: 0 auto;
-        max-height: 215px;
-        max-width: 285px;
 
         &--big {
-            grid-row-start: 1;
-            grid-row-end: 3;
+            
+            max-height: 100%;
+            max-width: 100%;
 
-            @media screen and (min-width: 992px) {
-                max-height: 100%;
-                max-width: 100%;
+           
+            @media screen and (min-width: 1200px) {
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+
+            & .gallery__img-wrapper {
+                
+                @media screen and (min-width: 768px) {
+                    max-height: 100%;
+                    max-width: 100%;
+                }
             }
         }
 
@@ -49,7 +58,10 @@
     
         
     &__img-wrapper {
+        text-align: center;
 
+        max-height: 215px;
+        max-width: 285px;
 
         &:hover img {
             transform: scale(1.1);
@@ -59,6 +71,15 @@
 
         & img {
             @include tr;
+        }
+
+        @media screen and (min-width: 768px) {
+            max-height: 100%;
+            max-width: 100%;
+        }
+        @media screen and (min-width: 1200px) {
+            max-height: 215px;
+            max-width: 285px;
         }
         
     }
