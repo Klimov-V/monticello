@@ -7,7 +7,8 @@
         e.preventDefault();
         let menu = document.querySelector('.header__menu');
 
-        menu.classList.toggle('active');
+        menu.classList.toggle('visible');
+        menu.classList.toggle('hidden');
     });
     
 

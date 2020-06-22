@@ -30,13 +30,13 @@ a {
 
   @media screen and (min-width: 768px) {
     max-width: 720px;
-}
-@media screen and (min-width: 992px) {
-    max-width: 960px;
-}
-@media screen and (min-width: 1200px) {
-    max-width: 1170px;
-}
+  }
+  @media screen and (min-width: 992px) {
+      max-width: 960px;
+  }
+  @media screen and (min-width: 1200px) {
+      max-width: 1170px;
+  }
 }
 
 @import 'navigation';
@@ -87,7 +87,7 @@ a {
   z-index: 10;
 
   @include hover {
-    fill: $secondary-color;
+    opacity: .6;
   }
 }
 

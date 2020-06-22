@@ -8,42 +8,96 @@
     left: 0;
     right: 0;
     z-index: 20;
+
+    .logo {
+      position: relative;
+      z-index: 10;
+    }
   
     &__menu {
       display: none;
 
+      @keyframes showBlock {
+        0% {
+          opacity: 0;
+          top: -600%;
+        }
+        100% {
+          opacity: 1;
+          top: 2%;
+        }
+      }
+      @keyframes hideBlock {
+        0% {
+          opacity: 1;
+          top: 20%;
+        }
+        100% {
+          opacity: 0;
+          top: -600%;
+        }
+      }
 
-      &.active {
-        @media screen and (max-width: 991px) {
-            display: block;
-            position: absolute;
-            top: 20%;
-            left: 2%;
-            right: 2%;
-            background-color: rgba(126, 90, 255, .8);
-            border-radius: 5px;
-            height: 95vh;
+      &.visible {
 
-            & .navigation {
-                margin: 0 auto;
-                
+        @media screen and (max-width: 767px) {
+          animation: showBlock .2s linear forwards;
+          display: block;
+          position: fixed;
+          top: 2%;
+          left: 2%;
+          right: 2%;
+          background-color: rgba(126, 90, 255, .9);
+          border-radius: 5px;
+          height: 95vh;
 
-                &__list {
-                    text-align: center;
-                    // width: 100%;
-                    padding-left: 0;
-                    flex-direction: column;
-                    justify-content: space-around;
-                }
-                
-            }
+          & .navigation {
+              margin: 0 auto;
+              
+
+              &__list {
+                  text-align: center;
+                  padding: 20% 0;
+                  flex-direction: column;
+                  justify-content: space-around;
+              }
+              
+          }
+
+        }
+      }
+      &.hidden {
+
+        @media screen and (max-width: 767px) {
+          animation: hideBlock .2s linear forwards;
+          display: block;
+          position: absolute;
+          top: 20%;
+          left: 2%;
+          right: 2%;
+          background-color: rgba(126, 90, 255, .9);
+          border-radius: 5px;
+          height: 95vh;
+
+          & .navigation {
+              margin: 0 auto;
+              
+
+              &__list {
+                  text-align: center;
+                  padding: 20% 0;
+                  flex-direction: column;
+                  justify-content: space-around;
+              }
+              
+          }
 
         }
       }
         
     }
   
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       &__menu {
         display: flex;
         flex-grow: 1;
@@ -110,7 +164,7 @@
     
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .navigation {
 
         &__toggler {
