@@ -138,7 +138,7 @@
     }
 
     .swiper {
-        
+        overflow: hidden;
         &-slide {
             max-width: 375px;
         }
@@ -187,10 +187,10 @@
         }
     }
     &__next {
-        @include posA(30%, null, 0, 50%);
-        right: -75px;
+        @include posA(50%, null, 0, 50%);
+        right: 280px;
     }
     &__prev {
-        @include posA(30%, -75px, 0, 50%);
+        @include posA(50%, 280px, 0, 50%);
     }
 }

@@ -1,0 +1,83 @@
+.touch {
+    position: relative;
+    bottom: 375px;
+    max-width: 770px;
+    padding: 0 60px 70px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -4px 30px 0px rgba(133, 133, 133, 0.2);
+
+    &__title {
+        padding: 55px 0 30px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__svg {
+        fill: #7e5aff;
+        margin-right: 10px;
+    }
+    &__links {
+        margin: 0;
+        padding: 0;
+        li:not(:first-of-type) {
+            padding-top: 45px;
+        }
+    }
+    &__link {
+        @include font($ff: $body-ff, $fz: 1.8rem, $fc: $secondary-color, $lh: 1.9);
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+
+}
+
+
+.Mollie_Medina {
+    font-size: 18px;
+    font-family: "Gotham";
+    color: rgb(44, 64, 88);
+    line-height: 1.222;
+    text-align: left;
+    -moz-transform: matrix( 1.01757708209002,0,0,1,0,0);
+    -webkit-transform: matrix( 1.01757708209002,0,0,1,0,0);
+    -ms-transform: matrix( 1.01757708209002,0,0,1,0,0);
+    position: absolute;
+    left: 823.498px;
+    top: 5044.002px;
+    z-index: 56;
+  }
+
+  .Email {
+    font-size: 18px;
+    font-family: "Gotham";
+    color: rgba(75, 85, 98, 0.502);
+    line-height: 1.222;
+    position: absolute;
+    left: 813.844px;
+    top: 5118.002px;
+    z-index: 58;
+  }
+
+
+
+
+  
+
+.__91_Nolan_Extensions_Suite_670____001_356_86 {
+    font-size: 18px;
+    font-family: "FontAwesome";
+    color: rgb(126, 90, 255);
+    line-height: 1.889;
+    text-align: left;
+    position: absolute;
+    left: 474.987px;
+    top: 5072.907px;
+    z-index: 62;
+  }
