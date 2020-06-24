@@ -188,9 +188,9 @@
     }
     &__next {
         @include posA(50%, null, 0, 50%);
-        right: 280px;
+        right: -5%;
     }
     &__prev {
-        @include posA(50%, 280px, 0, 50%);
+        @include posA(50%, -5%, 0, 50%);
     }
 }

@@ -39,6 +39,10 @@ a {
   }
 }
 
+.relative {
+  position: relative;
+}
+
 @import 'navigation';
 @import 'socials';
 @import 'about';
