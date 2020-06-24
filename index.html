@@ -396,54 +396,90 @@
 
     <section class="section map"></section>
 
-    <section class="section touch">
-        <h2 class="section__title touch__title">get in touch</h2>
-
-        <div class="touch__content">
-            <ul class="touch__links">
-                <li>
-                    <a class="touch__link" href="#">
-                        <svg class="touch__svg" width="15" height="15">
-                            <use xlink:href="#location"></use>
-                        </svg> 
-                        <span>91 Nolan Extensions Suite 670</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="touch__link" href="tel:+001 356-868-2454">
-                        <svg class="touch__svg" width="15" height="15">
-                            <use xlink:href="#phone"></use>
-                        </svg> 
-                        <span>+001 356-868-2454</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="touch__link" href="mailto:gahuy93@gmail.com">
-                        <svg class="touch__svg" width="15" height="15">
-                            <use xlink:href="#directory"></use>
-                        </svg> 
-                        <span>gahuy93@gmail.com</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="touch__link" href="#">
-                        <svg class="touch__svg" width="15" height="15">
-                            <use xlink:href="#clock"></use>
-                        </svg> 
-                        <span>From 07:05AM to 19:30PM</span>
-                    </a>
-                </li>
-            </ul>
-            <form action="#" method="POST" class="touch__form">
-                <input class="touch__input" type="text" name="name" placeholder="Name">
-                <input class="touch__input" type="email" name="email" placeholder="Email">
-                <a class="touch__input btn" type="submit" value="submit">submit</a>
-            </form>
+    <section class="section touch relative">
+        <div class="touch__block">
+            <h2 class="section__title touch__title">get in touch</h2>
+    
+            <div class="touch__content">
+                <ul class="touch__links">
+                    <li>
+                        <a class="touch__link" href="#">
+                            <svg class="touch__svg" width="15" height="15">
+                                <use xlink:href="#location"></use>
+                            </svg> 
+                            <span>91 Nolan Extensions Suite 670</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="touch__link" href="tel:+001 356-868-2454">
+                            <svg class="touch__svg" width="15" height="15">
+                                <use xlink:href="#phone"></use>
+                            </svg> 
+                            <span>+001 356-868-2454</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="touch__link" href="mailto:gahuy93@gmail.com">
+                            <svg class="touch__svg" width="15" height="15">
+                                <use xlink:href="#directory"></use>
+                            </svg> 
+                            <span>gahuy93@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="touch__link" href="#">
+                            <svg class="touch__svg" width="15" height="15">
+                                <use xlink:href="#clock"></use>
+                            </svg> 
+                            <span>From 07:05AM to 19:30PM</span>
+                        </a>
+                    </li>
+                </ul>
+                <form action="#" method="POST" class="touch__form">
+                    <input class="touch__input" type="text" name="name" placeholder="Name">
+                    <input class="touch__input" type="email" name="email" placeholder="Email">
+                    <a class="touch__btn btn" type="submit" value="submit">submit</a>
+                </form>
+            </div>
         </div>
     </section>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <picture>
+                        <source srcset="img/logo.png" media="(min-width: 992px)">
+                        <img src="img/logo-sm.png">
+                    </picture>
+                </a>
+            </div>
+            <div class="socials">
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                            <svg width="15" height="15">
+                                <use xlink:href="#facebook-ico"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                            <svg width="15" height="15">
+                                <use xlink:href="#tvitter-ico"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#" target="_blank">
+                            <svg width="15" height="15">
+                                <use xlink:href="#instagram-ico"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 
