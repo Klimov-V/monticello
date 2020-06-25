@@ -54,7 +54,7 @@ a {
   &__title {
     text-transform: uppercase;
     text-align: center;
-    @include font ($ff: $section-title-ff, $fz: 2.8rem, $fc: $secondary-color);
+    @include font ($ff: $section-title-ff, $fz: 2.4rem, $fc: $secondary-color);
     margin: 0;
     padding: 70px 0 70px;
 
