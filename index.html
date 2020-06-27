@@ -12,7 +12,7 @@
 
 <body>
 
-    <header>
+    <header id="header">
         <div class="container header">
             <h1 hidden>Monticello</h1>
             <div class="logo">
@@ -394,7 +394,9 @@
         </div>
     </section>
 
-    <section class="section map"></section>
+    <section class="section map">
+        <div id="map"></div>
+    </section>
 
     <section class="section touch relative" id="touch">
         <div class="touch__block">
@@ -602,10 +604,13 @@
     </svg>
 
 
-
+    <script src="js/headroom.min.js"></script>
+    <script src="js/header.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="js/sliders.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/styles.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiFceOZL6uEPGfa13UjNW_7NeL00sEago&callback=initMap&language=uk"></script>
 
 
 </body>

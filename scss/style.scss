@@ -42,6 +42,12 @@ a {
 .relative {
   position: relative;
 }
+.overflow-hidden {
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    overflow: visible;
+  }
+}
 
 @import 'navigation';
 @import 'socials';
@@ -111,3 +117,4 @@ a {
 @import 'map';
 @import 'touch';
 @import 'footer';
+
