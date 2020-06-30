@@ -14,8 +14,8 @@
         let menu = document.querySelector('.header__menu'),
             body = document.querySelector('body');
 
-        menu.classList.toggle('visible');
-        menu.classList.toggle('hidden');
+        menu.classList.toggle('header__menu--visible');
+        menu.classList.toggle('header__menu--hidden');
 
         body.classList.toggle('overflow-hidden');
     }

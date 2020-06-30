@@ -39,7 +39,7 @@
       }
     }
 
-    &.visible {
+    &--visible {
 
       @media screen and (max-width: 767px) {
         animation: showBlock .2s linear forwards;
@@ -64,7 +64,7 @@
         }
       }
     }
-    &.hidden {
+    &--hidden {
 
       @media screen and (max-width: 767px) {
         animation: hideBlock .2s linear forwards;
@@ -119,6 +119,11 @@
       text-decoration: none;
   
       &:hover:before {
+        background-color: white;
+        @include tr;
+      }
+
+      &--active:before {
         background-color: white;
         @include tr;
       }
@@ -178,16 +183,9 @@
   &--pinned {
     transform: translateY(0%);
     background-image: linear-gradient(45deg, rgba(85, 183, 255, .2), rgba(126, 90, 255, .4));
-
-    // & #header {
-    //   background-image: linear-gradient(45deg, rgba(85, 183, 255, .2), rgba(126, 90, 255, .4));
-    // }
   }
   
   &--unpinned {
     transform: translateY(-100%);
   }
 }
-// #header {
-//   background-image: linear-gradient(45deg, rgba(85, 183, 255, .2), rgba(126, 90, 255, .4));
-// }

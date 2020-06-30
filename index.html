@@ -25,10 +25,10 @@
             </div>
             
             
-            <div class="header__menu hidden">
+            <div class="header__menu header__menu--hidden">
                 <nav class="navigation">
                     <ul class="navigation__list">
-                        <li><a href="#" class="navigation__item">About Us</a></li>
+                        <li><a href="#about" class="navigation__item navigation__item--active">About Us</a></li>
                         <li><a href="#projects" class="navigation__item">Projects</a></li>
                         <li><a href="#news" class="navigation__item">News</a></li>
                         <li><a href="#touch" class="navigation__item">Contact</a></li>
@@ -65,7 +65,8 @@
         </div>
     </header>
 
-    <section class="section about">
+    <section class="section about" id="about">
+        <h2 class="section__title" hidden><a href="#about" class="section__title">about</a></h2>
         <div class="swiper-container about__swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"> 
@@ -112,7 +113,7 @@
 
     <section class="section projects" id="projects">
         <div class="container">
-            <h2 class="section__title projects__title">what we do</h2>
+            <h2 class="section__title projects__title"><a href="#projects" class="section__title projects__title">what we do</a></h2>
             <article class="project">
                 <div class="project__img-wraper">
                     <img class="project__img" src="https://picsum.photos/id/1/800/600" alt="Trade Center">
@@ -153,7 +154,7 @@
 
     <section class="section news" id="news">
         <div class="container relative">
-            <h2 class="section__title news__title">latest news</h2>
+            <h2 class="section__title news__title"><a href="#news" class="section__title news__title">latest news</a></h2>
             <div class="swiper-container news__swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"> 
@@ -299,9 +300,9 @@
     </section>
 
 
-    <section class="section gallery">
+    <section class="section gallery" id="gallery">
         <div class="container">
-            <h2 class="section__title gallery__title">gallery</h2>
+            <h2 class="section__title gallery__title"><a href="#gallery" class="section__title gallery__title">gallery</a></h2>
             <div class="gallery__panel">
                 <div class="gallery__item gallery__item--big">
                     <a href="#">
@@ -395,12 +396,13 @@
     </section>
 
     <section class="section map">
+        <h2 class="section__title" hidden><a href="#map" class="section__title">map</a></h2>
         <div id="map"></div>
     </section>
 
     <section class="section touch relative" id="touch">
         <div class="touch__block">
-            <h2 class="section__title touch__title">get in touch</h2>
+            <h2 class="section__title touch__title"><a href="#touch" class="section__title touch__title">get in touch</a></h2>
     
             <div class="touch__content">
                 <ul class="touch__links">
@@ -609,7 +611,7 @@
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="js/sliders.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/styles.js"></script>
+    <script src="js/mapStyles.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiFceOZL6uEPGfa13UjNW_7NeL00sEago&callback=initMap&language=uk"></script>
 
 
