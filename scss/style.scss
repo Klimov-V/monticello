@@ -109,6 +109,14 @@ a {
   color: $secondary-color;
   line-height: 50px;
   border: $border-width solid $secondary-color;
+  @include tr;
+
+  @include hover {
+    background-color: rgb(85, 183, 255);
+    color: $primary-color;
+    border-color: rgb(85, 183, 255);
+    box-shadow: 0 0 3px $secondary-color;
+  }
 }
 
 @import 'projects';

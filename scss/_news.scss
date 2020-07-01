@@ -181,6 +181,13 @@
         display: none;
         fill: $primary-color;
         z-index: 10;
+        @include tr;
+
+        &:hover {
+            opacity: .5;
+            cursor: pointer;
+            @include tr;
+        }
 
         @media screen and (min-width: 992px) {
             display: block;
