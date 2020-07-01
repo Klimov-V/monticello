@@ -26,4 +26,16 @@ window.addEventListener('scroll', (e) => {
         link && currentActive && currentActive.classList.add("navigation__item--active");
     }
 })
+window.addEventListener('scroll', (e) => {
+    let header = document.querySelector(".header");
+    
+    header && header.classList.remove("header__bg");
+
+    let secondSection = document.querySelector('#about');    
+
+    if (secondSection.getBoundingClientRect().bottom < 1) {
+        header && header.classList.add("header__bg");        
+    }
+    
+})
 
