@@ -66,38 +66,38 @@
     }
     
     &__title {
-        @include font ($ff: $title-ff, $lh: 1, $fz: 2rem);
+        @include font ($ff: $title-ff, $lh: 1, $fz: 2.4rem);
         margin: 0 0 10px;
 
         @media screen and (min-width: 576px) {
-            font-size: 3rem;
+            font-size: 4rem;
         }
         @media screen and (min-width: 768px) {
-            font-size: 4rem;
+            font-size: 6rem;
         }
         @media screen and (min-width: 1024px) {
             font-size: 8rem;
         }
     }
     &__subtitle {
-        font-size: .8rem;
+        font-size: 1.2rem;
         letter-spacing: .5rem;
         max-width: 280px;
         text-align: center;
 
         @media screen and (min-width: 576px) {
-            font-size: 1rem;
-            max-width: 100%
+            font-size: 1.6rem;
+            max-width: 90%
         }
         @media screen and (min-width: 768px) {
-            font-size: 1.2rem;
-        }
-        @media screen and (min-width: 768px) {
-            font-size: 1.4rem;
-        }
-        @media screen and (min-width: 1024px) {
             font-size: 1.8rem;
         }
+        // @media screen and (min-width: 768px) {
+        //     font-size: 1.4rem;
+        // }
+        // @media screen and (min-width: 1024px) {
+        //     font-size: 1.8rem;
+        // }
     
     }
 }
