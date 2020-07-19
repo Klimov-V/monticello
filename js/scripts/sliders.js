@@ -9,14 +9,20 @@ var aboutSwiper = new Swiper ('.about__swiper', {
     },
 })
 
-let scrinWidth = window.screen.width,
-    slidesValue = scrinWidth < 578 ? 1 : scrinWidth < 992 ? 2 : 3,
-    isCentered = scrinWidth < 992 ? false : true;
 
 var newsSwiper = new Swiper ('.news__swiper', {
     loop: true,
-    slidesPerView: slidesValue,
-    centeredSlides: isCentered,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            centeredSlides: false,
+        },
+        992: {
+            slidesPerView: 3
+        }
+    },
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,
