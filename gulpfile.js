@@ -9,6 +9,7 @@ var rigger       = require('gulp-rigger');
 const babel      = require('gulp-babel');
 var rename       = require('gulp-rename');
 var uglify       = require('gulp-uglify-es').default;
+var clean        = require('gulp-clean');
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
@@ -38,6 +39,14 @@ gulp.task('js', function() {
         .pipe(gulp.dest('js'))
         .pipe(browserSync.stream());
 })
+
+// gulp.task('clean', function() {
+//     return gulp.src('dist', {
+//         read: false,
+//         allowEmpty: true
+//     })
+//     .pipe(clean({force: true}));
+// })
 
 // Static Server + watching scss/html files
 gulp.task('serve', gulp.series('sass', 'js', function() {
