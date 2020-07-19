@@ -33,15 +33,6 @@ var mapStyles = [
   },
   {
     "featureType": "administrative.land_parcel",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.land_parcel",
     "elementType": "labels.text.fill",
     "stylers": [
       {
@@ -54,16 +45,7 @@ var mapStyles = [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#eeeeee"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "visibility": "off"
+        "color": "#c7c7c7"
       }
     ]
   },
@@ -81,7 +63,7 @@ var mapStyles = [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#e5e5e5"
+        "color": "#c0c0c0"
       }
     ]
   },
@@ -91,14 +73,6 @@ var mapStyles = [
     "stylers": [
       {
         "color": "#9e9e9e"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "stylers": [
-      {
-        "visibility": "off"
       }
     ]
   },
@@ -116,10 +90,7 @@ var mapStyles = [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#efefef"
-      },
-      {
-        "visibility": "off"
+        "color": "#f3f3f3"
       }
     ]
   },
@@ -143,28 +114,10 @@ var mapStyles = [
   },
   {
     "featureType": "road.highway",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#ffffff"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
     "elementType": "labels.text.fill",
     "stylers": [
       {
         "color": "#616161"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "off"
       }
     ]
   },
@@ -200,7 +153,7 @@ var mapStyles = [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#f2f2f2"
+        "color": "#f3f3f3"
       }
     ]
   },
