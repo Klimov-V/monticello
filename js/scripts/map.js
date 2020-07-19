@@ -26,14 +26,18 @@ function initMap() {
 
     geocoder = new google.maps.Geocoder();
 
-    let coords = { 
-        lat: 47.095615,
-        lng: 37.546457
+    let centerCoords = { 
+        lat: 40.63,
+        lng: -73.9
+    }
+    let markerCoords = { 
+        lat: 40.67,
+        lng: -73.9
     }
     
 
     map = new google.maps.Map(document.getElementById("map"), {
-      center: coords,
+      center: centerCoords,
       zoom: 12,
       styles : mapStyles
     });
@@ -41,23 +45,23 @@ function initMap() {
 
 
     marker = new google.maps.Marker({
-        // position: coords,
+        position: markerCoords,
         animation: google.maps.Animation.DROP,
-        icon: 'img/favicon.png',
+        icon: 'img/marker.png',
         map: map
     });
 
-    infowindow  = new google.maps.InfoWindow({
-        content: `35A, ул. Энгельса, 35А, Мариуполь, <b>Beetroot Academy IT HUB</b>`
-    });
+    // infowindow  = new google.maps.InfoWindow({
+    //     content: `35A, ул. Энгельса, 35А, Мариуполь, <b>Beetroot Academy IT HUB</b>`
+    // });
 
-    marker.addListener('click', function() {
-        infowindow.open(map, marker);
-    });
+    // marker.addListener('click', function() {
+    //     infowindow.open(map, marker);
+    // });
 
-    map.addListener('click', (e) => {
-        infowindow.close(map, marker);
-    });
+    // map.addListener('click', (e) => {
+    //     infowindow.close(map, marker);
+    // });
     
     // moveMarker();
 }

@@ -2,4 +2,6 @@
 //= header.js
 //= sliders.js
 //= script.js
-//= mapStyles.js
+//= styles.js
+//= map.js
+
