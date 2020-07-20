@@ -44,6 +44,7 @@
         height: 240px;
         overflow: hidden;
         position: relative;
+        text-align: center;
 
         svg {
             @include posA ();
@@ -55,8 +56,8 @@
     }
     &__img {
         width: 100%;
-        height: 100%;
         @include tr;
+
     }
 
     &__info {
